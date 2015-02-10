@@ -1,6 +1,8 @@
 {
     "name": "arx/utils",
     "description": "Arx Utils classes to use in any kind of projects",
+    "homepage": "http://www.arx.io",
+    "license": "MIT",
     "authors": [
         {
             "name": "Daniel Sum",
