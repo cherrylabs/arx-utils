@@ -7,7 +7,7 @@
 
 ## Features
 
-* some usefull php class and methods to use in any kind of php projects
+* Some usefull php class and methods (inspired by Laravel) to use in any kind of PHP projects
 
 ## Getting started
 
@@ -72,7 +72,7 @@ $ composer update
 
 ## License
 
-Blok Db is free software distributed under the terms of the MIT license
+Arx Utils is free software distributed under the terms of the MIT license
 
 ## Aditional information
 
