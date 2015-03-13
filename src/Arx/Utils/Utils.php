@@ -46,16 +46,12 @@ class Utils
      * @param $callback
      * @return array
      */
-    public static function alias($aliasName, $callback)
+    public static function alias($aliasName, $realfunc)
     {
         $err = false;
 
         if (function_exists($aliasName)) {
             $err = 'This function already' . $aliasName . ' exists';
-        }
-
-        if (!is_callable($callback, false, $realfunc)) {
-            $err = $callback.' is not callable';
         }
 
         if($err === false){
@@ -67,7 +63,7 @@ class Utils
 
                 eval($bodyFunc);
 
-                return array('result' => true, 'msg' => "function $aliasName created from $callback");
+                return array('result' => true, 'msg' => "function $aliasName created from $realfunc");
 
             } catch (\Exception $e) {
 
