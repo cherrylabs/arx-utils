@@ -206,7 +206,8 @@ abstract class kintParser extends kintVariableData
 
 			# now check whether the variable can be represented in a different way
 			foreach ( self::$_customDataTypes as $parserClass ) {
-				$className = '\\Arx\\classes\\debug\\Kint_Parsers_' . $parserClass;
+
+				$className = '\\Arx\\Utils\\debug\\Kint_Parsers_' . $parserClass;
 
 				/** @var $object kintParser */
 				$object       = new $className;
